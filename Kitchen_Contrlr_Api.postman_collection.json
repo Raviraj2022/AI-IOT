@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "18169555-64de-4679-b397-2d322aa66c43",
+		"name": "Kitchen_Contrlr_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4954544"
+	},
+	"item": [
+		{
+			"name": "http://localhost:2033/api/Values/SetScheduleTime",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ImeiNo\":\"860906047220709\",\r\n    \"ChannelNo\":\"1\",\r\n    \"SchNo\":\"1\",\r\n    \"StartTimeHH\":\"17\",\r\n    \"StartTimeMM\":\"10\",\r\n    \"EndTimeHH\":\"18\",\r\n    \"EndTimeMM\":\"11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/SetScheduleTime"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/GetScheduleTime",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\",\r\n     \"ChannelNo\":\"1\",\r\n     \"SchNo\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/GetScheduleTime"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/OutputStatusInfo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\",\r\n     \"ChannelNo\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/OutputStatusInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/GetDateTimeOfDeviceInfo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/GetDateTimeOfDeviceInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/GetOutputControlInfo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\",\r\n     \"ChannelNo\":\"1\",\r\n     \"State\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/GetOutputControlInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/SchedulerTimeExtensionInfo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\",\r\n     \"ChannelNo\":\"1\",\r\n     \"Alert\":\"50\",\r\n     \"TimeHH\":\"17\",\r\n     \"TimeMM\":\"30\",\r\n     \"TimeSS\":\"00\",\r\n     \"DateDD\":\"18\",\r\n     \"DateMM\":\"10\",\r\n     \"DateYY\":\"22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/SchedulerTimeExtensionInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2033/api/Values/SetTimeAndDate",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ajeevi#2023",
+						"username": "ajeevi"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"ImeiNo\":\"860906047220709\",\r\n     \"TimeHH\":\"17\",\r\n     \"TimeMM\":\"30\",\r\n     \"TimeSS\":\"00\",\r\n     \"DateDD\":\"18\",\r\n     \"DateMM\":\"10\",\r\n     \"DateYY\":\"22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2033/api/Values/SetTimeAndDate"
+			},
+			"response": []
+		}
+	]
+}
